@@ -32,6 +32,12 @@
 
 <br>
 
+ 
+
+[<img src="./src/img/study1_chairMarcelBreuer_eeveTest.jpg"/>]()
+
+[<img src="./src/img/study2_chairMarcelBreuer_eeveTest.jpg"/>]()
+
 #### [How to add seams](https://youtu.be/cS6B5PAzlWI)
 
 #### [UV Unwrapping - Blender 2.80 Fundamentals](https://youtu.be/Y7M-B6xnaEM)
@@ -51,7 +57,11 @@
 [<img src="./src/img/making_of_the_chair2.gif"/>]()
 
 <br>
-<br>
+
+[<img src="./src/img/Mies_van_der_Rohe_and_Lilly Reich__BarcelonaChair_hybrid.jpg
+"/>]()
+
+ <br>
 <br>
 
 # Beginning
