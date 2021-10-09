@@ -22,7 +22,7 @@
 
 <br>
 
-[<img src="./src/img/carpet_tests1__.gif"/>]()
+[<img src="./src/img/carpet_tests__.gif"/>]()
 
 <br>
  
