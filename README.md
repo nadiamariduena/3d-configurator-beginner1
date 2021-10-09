@@ -14,11 +14,15 @@
 
 <br>
 
+[<img src="./src/img/web_and_scene.gif"/>]()
+
+<br>
+
 #### In total it took me 6 to 7 months to design all the furniture in the scenes, including the different houses (i created before choosing the one i picked for this project), i also had to do a lot of research about the lighting (eevee | cycles ) in Blender and then THREEJS (which you will find at the end of this file). I had to learn about textures, materials, shaders, particles, physics (for the carpet, curtains and other stuff i decide not to use) animation, sound and of course dive more into web design & front end development.
 
 <br>
 
-[<img src="./src/img/web_and_scene.gif"/>]()
+[<img src="./src/img/carpet_tests1__.gif"/>]()
 
 <br>
  
