@@ -161,7 +161,7 @@ texture.repeat.set(0.5, 0.5);
 
 <br>
 
-> It was all a question of **Aesthetic**, i liked more the small details than the bigger ones.
+> It was all a question of **Aesthetic**, i liked more the small details than the bigger ones...
 
 [<img src="./src/img/making_of_croco_pattern1.gif"/>]()
 
