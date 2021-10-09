@@ -32,8 +32,6 @@
 
 <br>
 
- 
-
 [<img src="./src/img/study1_chairMarcelBreuer_eeveTest.jpg"/>]()
 
 [<img src="./src/img/study2_chairMarcelBreuer_eeveTest.jpg"/>]()
@@ -58,8 +56,7 @@
 
 <br>
 
-[<img src="./src/img/Mies_van_der_Rohe_and_Lilly Reich__BarcelonaChair_hybrid.jpg
-"/>]()
+[<img src="./src/img/Mies_van_der_Rohe_and_Lilly Reich__BarcelonaChair_hybrid.jpg"/>]()
 
  <br>
 <br>
