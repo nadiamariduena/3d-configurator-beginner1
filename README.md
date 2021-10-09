@@ -34,7 +34,7 @@
 
 <br>
 
-#### The way i started the chair was using this method:
+#### The way i started the chair was by using this method:
 
 [<img src="./src/img/making_of_the_chair1.gif"/>]()
 
