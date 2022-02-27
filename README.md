@@ -1,10 +1,10 @@
-#### I modeled this chair based on the celebre Barcelona chair designed by Ludwig Mies van der Rohe and Lilly Reich, for the German Pavilion at the International Exposition of 1929
+#### I modeled this chair 'based' on the celebre Barcelona chair designed by Ludwig Mies van der Rohe and Lilly Reich, for the German Pavilion at the International Exposition of 1929
 
 > The model is similar but not the same (to prevent copyright issues)
 
 <br>
 
-# the project
+## the project
 
 > It was divided in 3 parts:
 
@@ -14,13 +14,31 @@
 
 <br>
 
-[<img src="./src/img/web_and_scene.gif"/>]()
+[<img src="./src/img/web_and_scene.gif"/>](https://preview-volkanuve.vercel.app/)
 
 <br>
 
-#### In total it took me 6 to 7 months to design all the furniture in the scenes, including the different houses (i created before choosing the one i picked for this project), i also had to do a lot of research about the lighting (eevee | cycles ) in Blender and then THREEJS (which you will find at the end of this file). I had to learn about textures, materials, shaders, particles, physics (for the carpet, curtains and other stuff i decide not to use) animation, sound and of course dive more into web design & front end development.
+#### In total it took me 6 to 7 months to design all the furniture used in the website above.
+
+Including the different houses (i created before choosing the one i picked for this project).
 
 <br>
+
+- I also had to do a lot of **research about the lighting (eevee | cycles ) in Blender**
+
+<br>
+
+- I had to learn about **textures, materials, shaders, particles, physics (for the carpet, curtains and other stuff i decide not to use) animation**
+
+- Basic **video and sound editing**
+
+<br>
+
+- Then the THREEJS part, (which you will find at the end of this file). and of course dive more into web design & front end development so to present all of the content.
+
+<br>
+
+> Image below: use of **nodes**, particles, lighting.
 
 [<img src="./src/img/carpet_tests__.gif"/>]()
 
@@ -28,7 +46,21 @@
  
 <br>
 
-- From the beginning i knew that i would have to build the model thinking in when i would have to export it to threejs so I tried to follow the rules (keeping it clean) and also building it in parts in case there was an issue, I addition to that i also added [seams ](https://www.oreilly.com/library/view/learning-blender-a/9780133886283/ch08lev2sec6.html) to each part so to have a nice situation with the UV'S (**i thought i did it well** 😆 ), but i didnt realize the baking issues until the end when i had to finally use it. (but at the end it worked out).
+### ⚠️ To keep in mind
+
+##### Always Create your models thinking in the code, of course when you have more or less an idea of how threejs works.
+
+<br>
+
+- From the beginning i knew that i would have to build the model thinking in when i would have to export it to threejs.
+
+<br>
+
+- So I Built it in parts in case there was an issue at the end.
+
+<br>
+
+- In addition to that I also added [seams ](https://www.oreilly.com/library/view/learning-blender-a/9780133886283/ch08lev2sec6.html) to each part so to have a nice situation with the UV'S (**i thought i did it well** 😆 ), but i didnt realize the baking issues until the end when i had to finally use it. (but at the end it worked out).
 
 <br>
 
@@ -36,23 +68,39 @@
 
 [<img src="./src/img/study2_chairMarcelBreuer_eeveTest.jpg"/>]()
 
-#### [How to add seams](https://youtu.be/cS6B5PAzlWI)
+<br>
 
-#### [UV Unwrapping - Blender 2.80 Fundamentals](https://youtu.be/Y7M-B6xnaEM)
+#### Read More:
+
+##### [How to add seams](https://youtu.be/cS6B5PAzlWI)
+
+##### [UV Unwrapping - Blender 2.80 Fundamentals](https://youtu.be/Y7M-B6xnaEM)
 
 <br>
 
-#### The way i started the chair was by using this method:
+## ⚠️ Chair building process
+
+##### The way I started the chair was by using this method:
 
 [<img src="./src/img/making_of_the_chair1.gif"/>]()
 
-> This wans't complicated at all as i just had to do it like in the image, then extrude and give it the squared shape, then use a lattice to curve it a bit, but before that i had to wait until i had finished the chair support (the steel part).
+> This wans't complicated at all, as i just had to do it like in the image, then extrude and give it the squared shape, then use a lattice to curve it a bit, but before that i had to wait until i had finished the chair support (the steel part).
+
+<br>
+
+### Options (rejected)
 
 #### I was considering this other option:
 
+<br>
+
 > But after realizing [how many vertices ](https://docs.unity3d.com/560/Documentation/Manual/OptimizingGraphicsPerformance.html) (+ **400.000** due to the duplication of the square) it took to have the same result, i decided to use the first option:
 
+<br>
+
 [<img src="./src/img/making_of_the_chair2.gif"/>]()
+
+##### conclusion: it was too 'expensive' to use 🔴
 
 <br>
 
@@ -69,16 +117,24 @@
 
 > I had to do it fast since i didn't have more than 2 days to give to this project, and the reason for that was because parallel to this i was building a website(in which i wanted the chair to be integrated). So since i didn't have photoshop i had to look for other solutions with other free but complicated softwares(which made the situations even terrible), so i created a pattern manually which took me an hour to do it perfectly.
 
-##### In Blender the crocodile texture is composed of 4 images:
+<br>
+
+#### In Blender the crocodile texture is composed of 4 images:
 
 - color
 - roughness
 - normal
 - displacement
 
-### The first time, i tried to export the model with the 4 textures (so naive)
+<br>
 
-- All these 4 images "makes the crocodile texture of the chair", together they make around 90mb even (compressed with draco and also saved for web) ,so i exported the model to threejs without any textures| materials (no images or NODES), and it went from 96mb to 207.5 kb
+## ⚠️ Mind the size of the images
+
+<br>
+
+##### The first time, i tried to export the model with the 4 textures (so naive)
+
+- All these 4 images that makes the croco texture of the chair, makes a sum of around **90mb**,so i exported the model to threejs without any material (no images), and it **went from 96mb to 207.5 kb**
 
 <br>
 
@@ -86,45 +142,102 @@
 > ](https://stackoverflow.com/questions/52614371/apply-color-gradient-to-material-on-mesh-three-js)
 
 <br>
+<br>
 
-### Then i decided to bake the 4 images 🥥
+## ⚠️ When Baking / Blender
 
-##### So After the baking concluded, i got a blue message "baking map saved to internal image, save it externally or pack it”
+<br>
 
-- I made some research, to figure out the issue:
+#### Most of the time things don't bake because a variety of factors:
 
-https://blender.stackexchange.com/questions/186467/why-do-i-get-this-message-baking-map-saved-to-internal-image-save-it-externall
+<br>
 
-> Your main problem is elsewhere.
+- it wasn't baking the metal texture of the chair, because the metalic part **wasnt SMART unwrapped**, after i did it, it started baking.
 
-> You need to check Selected to Active if you're baking from a hi-res mesh.
-> Otherwise you'll get an empty normal map.
+<br>
 
-> Select your Hi-Res mesh
-> Select your target mesh with the image texture
-> Check Selected to Active and hit Bake.
+- After the baking was done, i got a blue message telling: **baking map saved to internal image, save it externally or pack it” when baking textures?**
 
-#### APPARENTLY THE SOLUTION DONT WORK FOR A SINGLE OBJECT:
+<br>
 
-https://blenderartists.org/t/cycles-bake-no-valid-objects-selected/613376/9
+##### [why-do-i-get-this-message-baking-map-saved-to-internal-image-save-it-externall](https://blender.stackexchange.com/questions/186467/why-do-i-get-this-message-baking-map-saved-to-internal-image-save-it-externall)
 
-> This problem occurs whenever you try to bake your object with the “Selected to active” ticked ON. This option is used if you have multiple objects selected and want to bake all of them at once.
+<br>
+
+#### Reasons:
+
+- Your main problem is elsewhere.
+
+- You need to check Selected to Active if you're baking from a hi-res mesh.
+  Otherwise you'll get an empty normal map.
+
+- Select your Hi-Res mesh
+
+- Select your target mesh with the image texture
+
+- Check Selected to Active and hit Bake.
+
+<br>
+
+#### Apparently the solution dont work for a single model, like you can read it here: [cycles-bake-no-valid-objects-selected](https://blenderartists.org/t/cycles-bake-no-valid-objects-selected/613376/9)
+
+<br>
+
+> This problem occurs whenever you try to bake your object with the **“Selected to active” ticked ON.** ✋
+
+<br>
+
+**This option is used if you have multiple objects selected and want to bake all of them at once.**
+
 > Remember in that case also to mark the texture nodes you want baked to in every obejcts’ material.
 
-#### MORE
+<br>
+<br>
 
-##### when adding the 2024px w and height i checked [x] the ALPHA, that was the only thing i made different and it didnt gave me an error but instead drop me an image
+---
 
-#### ALSO:
+<br>
+<br>
 
-you have to select the furniture you are exporting and the nodes it uses
+### ⚠️
 
-#### SOLUTION TO THE CROCODILE TEXTURE NOT MATCHING
+#### When adding the 2024px w and height, i checked the case "ALPHA", that was the only thing i made different and it didnt gave me an error, but instead drop me an image
 
-> I HAD TO MAKE SEAMS TO THE CUCHION THEN SMART UNWRAP AGAIN, THEN EXPORT IT AGAIN, AS ANY CHANGE IN THE BLENDER MODEL SHOULD
-> BE UPDATED AND THEN EXPORTED TO THREEJS, OTHERWISE YOU WONT SEE ANY CHANGE.
+<br>
 
-##### SO AFTER THAT THE BAKED IMAGE WORKED
+##### ALSO:
+
+> You have to select the furniture you are exporting and the nodes it uses, as **if you try to bake or save without selecting the model/object nothing will happen.**
+
+<br>
+<br>
+
+### ⚠️ The Image Croco & the Cushion
+
+#### Solution to the Croco texture not matching.
+
+- I had to go back to Blender and make **SEAMS** to the cushion:
+
+<br>
+
+##### [Blender 2.8: UV Seams Explained in 3 Minutes!](https://youtu.be/cS6B5PAzlWI)
+
+<br>
+
+- Not only I had to make seams but I also had to **smart unwrap** it again.
+
+<br>
+
+- Then after that i exported it again. **(you should always export the fresh changes made to the model, to threejs)** otherwise you will not see any change. 🔴
+
+<br>
+
+#### After that, it worked!!
+
+<br>
+<br>
+
+---
 
 <br>
 
@@ -132,9 +245,11 @@ you have to select the furniture you are exporting and the nodes it uses
 
 > <u>I tested different bakings to see the results as it was my first time baking textures</u> , at the end i obtained a crocodile texture out of the 4 images and then i populated a file in something similar to photoshop to get a pattern. (I know there are complicated ways to do it with code but i didn't have time to try it)
 
+<br>
+
 #### to try in the future:
 
-[Three.js: How do I scaling and offset my image textures?](https://stackoverflow.com/questions/33803280/three-js-how-do-i-scaling-and-offset-my-image-textures)
+##### [Three.js: How do I scaling and offset my image textures?](https://stackoverflow.com/questions/33803280/three-js-how-do-i-scaling-and-offset-my-image-textures)
 
 ```javascript
 /*
@@ -164,11 +279,11 @@ texture.repeat.set(0.5, 0.5);
 
 #### or
 
-[Scaling texture to fit a (any size) Plane perfectly](https://stackoverflow.com/questions/50842740/three-js-scaling-texture-to-fit-a-any-size-plane-perfectly/50889010)
+#### [Scaling texture to fit a (any size) Plane perfectly](https://stackoverflow.com/questions/50842740/three-js-scaling-texture-to-fit-a-any-size-plane-perfectly/50889010)
 
 > **Miscellaneous:** Apply color gradient to material on mesh - three.js
 
-[https://stackoverflow.com/questions/52614371/apply-color-gradient-to-material-on-mesh-three-js](https://stackoverflow.com/questions/52614371/apply-color-gradient-to-material-on-mesh-three-js)
+##### [https://stackoverflow.com/questions/52614371/apply-color-gradient-to-material-on-mesh-three-js](https://stackoverflow.com/questions/52614371/apply-color-gradient-to-material-on-mesh-three-js)
 
 <br>
 
@@ -176,38 +291,60 @@ texture.repeat.set(0.5, 0.5);
 
 [<img src="./src/img/making_of_croco_pattern1__.gif "/>]()
 
+<br>
+<br>
+
 ### More baking issues (steel effect)
-
-> it wasnt baking the metal texture because the metalic part wasnt SMART unwrapped, after i did it, it started baking.
-
-- Once i got the baking, i realized it wasnt going to work in threejs in the way i had it in blender, and that because of the reflectivity which is different there.
-
-So after searching for a solution i found out that it had to be made like this:
-
-- You need images (hdri) to play with the reflection
-- you need to create a cube that will wrap the mesh like a 'world' simulation.
 
 <br>
 
-https://threejs.org/examples/?q=env#webgl_materials_envmaps
+> it wasn't baking the metal texture because the metalic part wasnt SMART unwrapped, after i did it, it started baking.
 
-[Equirectangular map by university of southern california](https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_envmaps.html)
+<br>
+
+- Once i got the baking, i realized it wasnt going to work in threejs in the way i had it in blender, and the reason for that is because of **the reflectivity which is different there.**
+
+<br>
+
+##### So after searching for a solution i found out that it had to be made like this:
+
+<br>
+
+- You need images **(hdri)** to play with the reflection
+
+<br>
+
+- you need to create a cube that will wrap the mesh like a **'world' simulation**.
+
+<br>
+
+###### [webgl_materials_envmaps](https://threejs.org/examples/?q=env#webgl_materials_envmaps)
+
+###### [Equirectangular map by university of southern california](https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_envmaps.html)
 
 [<img src="./src/img/steel_effect_chair_reflextion.gif"/>]()
 
-## Reflections
+<br>
 
-#### [Dynamic reflections in Three.js](https://stackoverflow.com/questions/34590256/dynamic-reflections-in-three-js)
+## ⚠️ Reflections
 
-#### ➡️ [Three.js Realistic Material Reflection Tutorial](https://redstapler.co/three-js-realistic-material-reflection-tutorial/)
+##### [Dynamic reflections in Three.js](https://stackoverflow.com/questions/34590256/dynamic-reflections-in-three-js)
+
+##### ➡️ [Three.js Realistic Material Reflection Tutorial](https://redstapler.co/three-js-realistic-material-reflection-tutorial/)
+
+<br>
 
 <br>
 
 #### Realistic color management | sRGBEncoding with post-processing
 
+<br>
+
 ##### [sRGBEncoding with post-processing](https://discourse.threejs.org/t/srgbencoding-with-post-processing/12582)
 
 > I will add the blog post here in case they decide to delete it like i have seen so often!
+
+<br>
 
 ```javascript
 
@@ -457,21 +594,23 @@ or see how it works. For something simple, make a CSS gradient and put it behind
 
 <br>
 
-#### Transparent background with three.js
-
-https://stackoverflow.com/questions/20495302/transparent-background-with-three-js
+### ⚠️ Useful:
 
 <br>
 
-#### How to hide the display of background HDR map, but save hdri's work for lighting in three.js?
+##### [Transparent background with three.js](https://stackoverflow.com/questions/20495302/transparent-background-with-three-js)
 
-[How to hide the display of background HDR map, but save hdri's work for lighting in three.js?](https://stackoverflow.com/questions/56092514/how-to-hide-the-display-of-background-hdr-map-but-save-hdris-work-for-lighting)
+<br>
+
+##### [How to hide the display of background HDR map, but save hdri's work for lighting in three.js?](https://stackoverflow.com/questions/56092514/how-to-hide-the-display-of-background-hdr-map-but-save-hdris-work-for-lighting)
 
 <br>
 
 #### How to show a cube map reflection on a object without showing the cubemap in the background?
 
 [How to show a cube map reflection on a object without showing the cubemap in the background?](https://stackoverflow.com/questions/32167275/how-to-show-a-cube-map-reflection-on-a-object-without-showing-the-cubemap-in-the)
+
+<br>
 
 ```javascript
 var path = "textures/cube/foo/";
@@ -503,8 +642,12 @@ var material = new THREE.MeshPhongMaterial({
 ```
 
 <br>
+<br>
 
 #### [How to get my scene background to be transparent?](https://discourse.threejs.org/t/how-to-get-my-scene-background-to-be-transparent/11702)
+
+<br>
+<br>
 
 #### [Gradient example](https://jsfiddle.net/f2Lommf5/15331/)
 
@@ -733,7 +876,10 @@ this.scene.add(spotLightHelper);
 <br>
 <br>
 
-## SHADOWS
+## ⚠️ SHADOWS
+
+<br>
+<br>
 
 #### Shadows are related to the type of light I set up
 
@@ -752,6 +898,9 @@ PCFShadowMap;
 PCFSoftShadowMap;
 PCFBasicShadowMap;
 ```
+
+<br>
+<br>
 
 #### SOFT SHADOWS WITH PCF
 
@@ -813,7 +962,12 @@ this.planeMesh.position.z = 0;
 this.scene.add(this.planeMesh);
 ```
 
-#### Extra info:
+<br>
+<br>
+<br>
+<br>
+
+## Extra info:
 
 https://medium.com/@andrew_b_berg/volumetric-light-scattering-in-three-js-6e1850680a41
 
@@ -832,5 +986,3 @@ https://discourse.threejs.org/t/how-to-achieve-this-material-effect-gif-image/12
 https://discourse.threejs.org/t/lightmap-second-set-of-uv-coordinates/5189
 
 https://stackoverflow.com/questions/55131767/rendering-shadows-from-plane-with-partially-transparent-texture-in-three-js
-
-## the project isn't over yet but I can only say one thing... I LOVE IT!!! 🚀
