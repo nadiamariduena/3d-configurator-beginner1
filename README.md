@@ -1,4 +1,4 @@
-#### I modeled this chair 'based' on the celebre Barcelona chair designed by Ludwig Mies van der Rohe and Lilly Reich, for the German Pavilion at the International Exposition of 1929
+### 🚀 I modeled this chair 'based' on the celebre `Barcelona chair` designed by Ludwig Mies van der Rohe and Lilly Reich, for the German Pavilion at the International Exposition of 1929
 
 > The model is similar but not the same (to prevent copyright issues)
 
